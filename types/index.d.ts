@@ -16,6 +16,7 @@ declare module 'express' {
     interface CustomLocals extends Locals {
         subdomain: string
         domain: DominioLeanDocument
-        user: UsuarioLeanDocument
+        user?: UsuarioLeanDocument
+        cliente?: any
     }
 }
