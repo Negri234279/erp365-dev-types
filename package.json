@@ -3,6 +3,11 @@
   "version": "1.0.1",
   "description": "Typescript definitions for ERP365",
   "author": "rafalejo01@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Negri234279/erp365-dev-types"
+  },
+  "homepage": "https://github.com/Negri234279/erp365-dev-types",
   "license": "Proprietary",
   "types": "types/index.d.ts",
   "devDependencies": {
