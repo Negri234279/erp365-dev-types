@@ -5,6 +5,8 @@ export interface Plan {
     maxConcurrentUsers: number
     maxConnectionsPerUser: number
     allowMultipleDevices: boolean
+    maxDiskSpace: number
+    usageDiskSpace: number
 }
 
 export interface Region {
