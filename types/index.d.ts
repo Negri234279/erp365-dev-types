@@ -1,6 +1,6 @@
 import { Request as ExpressRequest, Response as ExpressResponse } from 'express'
 import { Connection } from 'mongoose'
-import { DominioLeanDocument } from './schemas/domain'
+import { DominioDocument, DominioLeanDocument } from './schemas/domain'
 import { UsuarioLeanDocument } from './schemas/users'
 
 declare module 'express' {
@@ -15,7 +15,7 @@ declare module 'express' {
 
     interface CustomLocals extends Locals {
         subdomain: string
-        domain: DominioLeanDocument
+        domain: DominioDocument
         user?: UsuarioLeanDocument
         cliente?: any
     }
