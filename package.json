@@ -1,6 +1,6 @@
 {
   "name": "erp365-dev-types",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Typescript definitions for ERP365",
   "author": "rafalejo01@gmail.com",
   "repository": {
