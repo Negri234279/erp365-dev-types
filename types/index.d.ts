@@ -1,22 +1,22 @@
-import { Request as ExpressRequest, Response as ExpressResponse } from 'express'
 import { Connection } from 'mongoose'
-import { DominioDocument, DominioLeanDocument } from './schemas/domain'
-import { UsuarioLeanDocument } from './schemas/users'
+
+import { DominioDocument } from './schemas/domain'
+import { UsuarioDocument } from './schemas/users'
 
 declare module 'express' {
-    interface Request extends ExpressRequest {
+    interface Request {
         dbInstance: Connection
         masterDb: Connection
     }
 
-    interface Response extends ExpressResponse {
+    interface Response {
         locals: CustomLocals
     }
 
-    interface CustomLocals extends Locals {
+    interface CustomLocals {
         subdomain: string
         domain: DominioDocument
-        user?: UsuarioLeanDocument
+        user?: UsuarioDocument
         cliente?: any
     }
 }
