@@ -58,3 +58,5 @@ export interface Cliente {
     numeroPoliza?: string
     tipoPunzon?: string
 }
+
+export interface ClienteDocument extends Cliente, Document { }

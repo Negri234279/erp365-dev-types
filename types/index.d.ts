@@ -2,6 +2,7 @@ import { Connection } from 'mongoose'
 
 import { DominioDocument } from './schemas/domain'
 import { UsuarioDocument } from './schemas/users'
+import { ClienteDocument } from './schemas/client'
 
 declare module 'express' {
     interface Request {
@@ -17,6 +18,6 @@ declare module 'express' {
         subdomain: string
         domain: DominioDocument
         user?: UsuarioDocument
-        cliente?: any
+        cliente?: ClienteDocument
     }
 }
